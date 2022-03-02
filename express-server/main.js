@@ -6,7 +6,6 @@ const base64ToBlob = require('base64-blob')
 const { body, checkSchema, validationResult } = require('express-validator')
 const connection = require('./db')
 const moment = require('moment')
-
 const app = express()
 const port = 3000
 
