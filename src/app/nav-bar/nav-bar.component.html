@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand">FastDrop</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a [routerLink]="['/home']" routerLinkActive="active" class="nav-link">Home</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Orders</a>
+            <div class="dropdown-menu">
+                <a (click)="createNew()" name='new-order' class="dropdown-item">New Order</a>
+            </div>
+        </li>
+        
+        <li class="nav-item">
+            <a href="#" class="nav-link">Logout</a>
+        </li>
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>

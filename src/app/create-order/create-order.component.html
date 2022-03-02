@@ -1,0 +1,56 @@
+
+<form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="order-name">Order name</label>
+        <input id="order-name" type="text" class="form-control" formControlName="order-name">
+    </div>
+
+
+    <div class="row mb-3">
+        <div class="col-sm-6">
+            <label for="type">Type</label>
+            <select id="type" class="form-select" aria-label="Default select example" formControlName="type">
+                <option value="0">Gift</option>
+                <option value="1">Food</option>
+                <option value="2">Other</option>
+            </select>
+        </div>
+        <div class="col-sm-6">
+            <label for="weight">Weight(in kg)</label>
+            <input id="weight" type="number" class="form-control" formControlName="weight">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-sm-6">
+            <label for="length">Length(in metres)</label>
+            <input id="length" type="number" class="form-control" formControlName="length">
+        </div>
+        <div class="col-sm-6">
+            <label for="breadth">Breadth(in cms)</label>
+            <input id="breadth" type="number" class="form-control" formControlName="breadth">
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="alt-phone">Alternate Phone Number</label>
+        <input id="alt-phone" type="number" class="form-control" formControlName="alt-phone">
+    </div>
+
+    <div class="mb-3">
+        <label for="pic">Upload parcel pic</label>
+        <input id="pic" type="file" class="form-control" (change)="onFileSelected($event)" formControlName="pic">
+    </div>
+
+    <div class="mb-3">
+        <label for="pickup-addr">Pickup Address</label>
+        <input id="pickup-addr" type="text" class="form-control" formControlName="pickup-addr">
+    </div>
+
+    <div class="mb-3">
+        <label for="drop-addr">Drop Address</label>
+        <input id="drop-addr" type="text" class="form-control" formControlName="drop-addr">
+    </div>
+
+    <button class="btn btn-primary w-100" type="submit">Save & Next</button>
+</form>

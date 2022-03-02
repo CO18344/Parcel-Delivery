@@ -1,0 +1,26 @@
+.container > div{
+    background-color: rgb(212, 228, 238);
+    margin-bottom: 2px;
+}
+
+.container > div:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.container > .row{
+    min-height: 30px;
+    align-items: center;
+}
+
+.container > .row:nth-child(4){
+    text-align: center;
+}
+
+.container > .row:nth-child(4){
+    background-color: aquamarine;
+}
+
+.container > .row > div:nth-child(1){
+    border-right-style: dashed;
+}
