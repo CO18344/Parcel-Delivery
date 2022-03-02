@@ -296,17 +296,3 @@ function verifyOtp(otpPack, res) {
   // return verificationStatus;
 }
 
-// Download the helper library from https://www.twilio.com/docs/node/install
-// Find your Account SID and Auth Token at twilio.com/console
-// and set the environment variables. See http://twil.io/secure
-// const accountSid = 'AC5a99bb7e40f347f6715e8d0ad201079f';
-// const authToken = '7288e44944917efe6a31db3692d3a086';
-// const client = require('twilio')(accountSid, authToken);
-
-// client.messages
-//   .create({
-//      body: 'Your OTP is 9467',
-//      from: '+19107202746',
-//      to: '+917526916694'
-//    })
-//   .then(message => console.log(message.sid));
